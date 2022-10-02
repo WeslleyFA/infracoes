@@ -1,0 +1,43 @@
+<div class="row light center">
+    <div class="col-md-12">
+        <h1>Infrações em Tempo Real</h1>
+    </div>
+</div>
+
+<div class="row center">
+    <div class="col-md-2"></div>
+
+    <div class="col-md 8 box-light pad">
+        <table *ngIf="infracoes.length > 0" class="table table-striped">
+            <tr>
+                <th>Data</th>
+                <th>Veiculo</th>
+                <th>Placa</th>
+                <th>Velociade</th>
+            </tr>
+            <tbody>
+                <tr *ngFor="let infracao of infracoes">
+                    <td>
+                        {{infracao.data}}
+                    </td>
+                    <td>
+                        {{infracao.veiculo}}
+                    </td>
+                    <td>
+                        {{infracao.placa}}
+                    </td>
+                    <td>
+                        {{infracao.velocidade}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+ 
+        <h3 *ngIf="infracoes.length == 0">Nenhuma Infração registrada.</h3>
+       
+    </div>
+
+    <div class="col-md-2"></div>
+</div>
+
+
