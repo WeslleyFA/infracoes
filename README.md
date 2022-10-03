@@ -7,7 +7,7 @@ A API possui o perfil de DEV e TEST, o test usa o banco h2 na memória enquanto 
 
 #
 Com a API em execução, rode o projeto serviceInfracoes. <br>
-Após rodar o serviço, é possivel acompanhar as resposta no console da IDE.
+Após rodar o serviço, é possivel acompanhar as respostas no console da IDE.
 
 ## Front - Opcional
 ###### Caso queira ver as infrações numa interface web
